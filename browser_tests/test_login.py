@@ -2,7 +2,6 @@
 
 import time
 
-import pytest
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
@@ -30,10 +29,40 @@ def test_login_wrong_password(driver):
     """TODO: standard_user + a wrong password stays at login with a credentials error."""
     # Open the login page, submit the credentials, wait for the error,
     # and assert both the error message and the visible login form.
-    pytest.fail("TODO: implement this test")
+    # Arrange
+    driver.get("https://www.saucedemo.com/")
+    wait = WebDriverWait(driver, 15)
+    wait.until(EC.visibility_of_element_located((By.ID, "user-name"))).send_keys("standard_user")
+    driver.find_element(By.ID, "password").send_keys("wrong_password")
+
+    # Act
+    driver.find_element(By.ID, "login-button").click()
+
+    # Assert
+    error = wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, '[data-test="error"]')))
+    assert error.text == "Epic sadface: Username and password do not match any user in this service"
+    assert driver.find_element(By.ID, "user-name").is_displayed()
+    assert driver.find_element(By.ID, "password").is_displayed()
+    assert driver.find_element(By.ID, "login-button").is_displayed()
+    assert driver.current_url == "https://www.saucedemo.com/"
 
 
 def test_login_locked_user(driver):
     """TODO: locked_out_user + secret_sauce stays at login with a locked-user error."""
     # Use a fresh login, wait for the error, then check its message and the login form.
-    pytest.fail("TODO: implement this test")
+    # Arrange
+    driver.get("https://www.saucedemo.com/")
+    wait = WebDriverWait(driver, 15)
+    wait.until(EC.visibility_of_element_located((By.ID, "user-name"))).send_keys("locked_out_user")
+    driver.find_element(By.ID, "password").send_keys("secret_sauce")
+
+    # Act
+    driver.find_element(By.ID, "login-button").click()
+
+    # Assert
+    error = wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, '[data-test="error"]')))
+    assert error.text == "Epic sadface: Sorry, this user has been locked out."
+    assert driver.find_element(By.ID, "user-name").is_displayed()
+    assert driver.find_element(By.ID, "password").is_displayed()
+    assert driver.find_element(By.ID, "login-button").is_displayed()
+    assert driver.current_url == "https://www.saucedemo.com/"

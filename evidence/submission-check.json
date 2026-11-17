@@ -1,0 +1,16 @@
+{
+  "student_id": "V202603342",
+  "verified_at": "2026-11-17T14:43:30.340845+07:00",
+  "archive": "tutorial4_V202603342.zip",
+  "entries": [
+    "test_tax.py",
+    "test_login.py",
+    "test_add_to_cart.py"
+  ],
+  "sha256": "3efe5791b53f19e44338c14a3d55ff5861937956846755f475e88ea14c7f1bda",
+  "files": {
+    "tests\\test_tax.py": "8fff585fddd63b42eae40d8726969212804ef68a655b4c5e4a3c90e741c5b8ed",
+    "browser_tests\\test_login.py": "495dfb109d696bc93827b0a3700407d4cac0773545c46be057098b267f13cc6f",
+    "browser_tests\\test_add_to_cart.py": "5425bbd391bdc74a7a7e68463a72879746fd182597abcaf9e2012b4e0cdf05a9"
+  }
+}
