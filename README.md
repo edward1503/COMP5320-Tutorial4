@@ -2,7 +2,12 @@
 
 ## Student submission and execution evidence
 
-**Student ID: V202603342**  
+**Name: Nguyen Don Duc**
+
+**Email: [26duc.nd@vinuni.edu.vn](mailto:26duc.nd@vinuni.edu.vn)**
+
+**Student ID: V202603342**
+
 **Completed and verified: 17 November 2026 (Asia/Saigon)**
 
 All four lab activities have been completed. The results below are from executed checks; browser tests ran in visible Google Chrome.
