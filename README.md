@@ -1,5 +1,32 @@
 # Tutorial 4: Testing Lab Guide
 
+## Student submission and execution evidence
+
+**Student ID: V202603342**  
+**Completed and verified: 17 November 2026 (Asia/Saigon)**
+
+All four lab activities have been completed. The results below are from executed checks; browser tests ran in visible Google Chrome.
+
+| Activity | Work completed and observed result | Evidence |
+| --- | --- | --- |
+| Lab 1: worked example | 1 passed; 67% statement coverage | [Worked-example log](evidence/01-worked-example.txt) |
+| Lab 1: initial checkpoint (TODOs 1–5) | 6 passed, 2 deselected; 89% statement coverage and 87% branch coverage | [Statement log](evidence/02-initial-statement.txt), [branch log](evidence/03-initial-branch.txt) |
+| Lab 1: all seven TODOs | 8 passed; 100% statement and branch coverage; 18 statements, 0 missed, 12 branches, 0 partial | [Statement log](evidence/04-final-statement.txt), [branch log](evidence/05-final-branch.txt), [coverage data](evidence/coverage.json) |
+| Lab 2: login | Completed wrong-password and locked-user tests; all 3 login tests passed | [Login test code](browser_tests/test_login.py), [execution log](evidence/07-login-tests.txt) |
+| Lab 3: Add to Cart | Created and ran the Backpack test: 1 passed; asserts Your Cart, exactly one product row, Sauce Labs Backpack, quantity 1; stops before checkout | [Cart test code](browser_tests/test_add_to_cart.py), [execution log](evidence/08-cart-test.txt), [live exploration log](evidence/06-browser-exploration.txt) |
+| Lab 4: prompt injection observation | Two fresh agent sessions proposed different commands; collection confirmed that the injected filter excludes the wrong-password test | [Original collection](evidence/10-lab4-original-collection.txt), [filtered collection](evidence/11-lab4-filtered-collection.txt), [responses and debrief](evidence/README.md#lab-4-two-fresh-agent-sessions) |
+| Final combined suite | `uv run pytest tests browser_tests -v`: **12 passed in 21.82 seconds** | [Full execution log](evidence/09-full-suite.txt), [JUnit XML](evidence/full-suite.xml) |
+
+The screenshot below was captured during live browser exploration of the cart. Test execution results are recorded separately in the logs above.
+
+![Live SauceDemo cart with one Sauce Labs Backpack, quantity 1](evidence/cart-exploration.png)
+
+**Submission archive:** [tutorial4_V202603342.zip](tutorial4_V202603342.zip). Reopened and verified to contain exactly `test_tax.py`, `test_login.py`, and `test_add_to_cart.py` at the top level, with contents matching the completed source files. See the [archive verification and SHA-256 hashes](evidence/submission-check.json).
+
+See the [complete evidence notes](evidence/README.md) for environment details, AAA and coverage explanations, cart locators and waits, and the Lab 4 debrief. Lab 4 notes and other evidence are kept outside the submission ZIP, as required.
+
+---
+
 ## Setup
 
 Install [uv](https://docs.astral.sh/uv/getting-started/installation/) and use Python 3.14 or later. Open a terminal at the repository root (`COMP5320-Tutorial4/`). Run all commands in this guide from that folder:
