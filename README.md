@@ -12,7 +12,7 @@ This submission counts for all five members of Team 11.
 | 2 | Truong Minh Hieu | V202603135 | |
 | 3 | Hoang Hiep | V202603378 | |
 | 4 | Nguyen Xuan Tung | V202603126 | |
-| 5 | | | |
+| 5 | Vu Lam Anh | V202603128 | |
 
 **Completed and verified: 17 November 2026 (Asia/Saigon)**
 
