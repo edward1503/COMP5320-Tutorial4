@@ -9,8 +9,8 @@ This submission counts for all five members of Team 11.
 | No. | Full name | Student ID | Email |
 | --- | --- | --- | --- |
 | 1 | Nguyen Don Duc | V202603342 | [26duc.nd@vinuni.edu.vn](mailto:26duc.nd@vinuni.edu.vn) |
-| 2 | | | |
-| 3 | | | |
+| 2 | Trương Minh Hiếu | V202603135 | |
+| 3 | Hoàng Hiệp | V202603378 | |
 | 4 | | | |
 | 5 | | | |
 
