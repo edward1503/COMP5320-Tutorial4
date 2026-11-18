@@ -11,7 +11,7 @@ This submission counts for all five members of Team 11.
 | 1 | Nguyen Don Duc | V202603342 | [26duc.nd@vinuni.edu.vn](mailto:26duc.nd@vinuni.edu.vn) |
 | 2 | Truong Minh Hieu | V202603135 | |
 | 3 | Hoang Hiep | V202603378 | |
-| 4 | | | |
+| 4 | Nguyen Xuan Tung | V202603126 | |
 | 5 | | | |
 
 **Completed and verified: 17 November 2026 (Asia/Saigon)**
